@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luninha Assistente - Thau Luna Acessórios</title>
+    <meta name="description"
+          content="Chat online com a Luninha, assistente virtual da Thau Luna Acessórios. Tire suas dúvidas e encontre os melhores acessórios!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="ping.mp3" as="audio">
+
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-wrap">
+
+    <div class="chat-container" role="application" aria-label="Chat Luninha">
+
+        <header class="chat-header" id="chatHeader">
+            <img src="avatar.png" alt="Avatar da Luninha" class="avatar">
+            <div class="header-text">
+                <h1 class="chat-title">Luninha 🌙</h1>
+                <div class="chat-sub">Assistente da Thau Luna Acessórios</div>
+            </div>
+        </header>
+
+        <main id="chatBox" class="chat-box" role="log" aria-live="polite"></main>
+
+        <div class="chat-input-area">
+            <label for="userMessage" class="sr-only">Digite sua mensagem:</label>
+            <input type="text" id="userMessage" placeholder="Escreva aqui..." aria-label="Digite sua mensagem">
+            <button id="sendBtn" aria-label="Enviar mensagem">Enviar</button>
+        </div>
+
+        <a id="waLink" href="https://wa.me/5585987511775?text=Oi%20Luninha!%20Vim%20do%20site%20e%20quero%20ajuda."
+           target="_blank" rel="noopener noreferrer" class="sr-only">WhatsApp Thau Luna</a>
+
+        <a id="instaLink" href="https://instagram.com/thauluna_acessorios" target="_blank"
+           rel="noopener noreferrer" class="sr-only">Instagram Thau Luna</a>
+
+        <a id="siteLink" href="https://thaulunaacessorios.meloja.com.br" target="_blank"
+           rel="noopener noreferrer" class="sr-only">Site Thau Luna</a>
+
+        <audio id="pingSound" src="ping.mp3" preload="auto"></audio>
+    </div>
+
+    <footer class="page-footer">
+        <small>Thau Luna Acessórios — detalhes que encantam ✨</small>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

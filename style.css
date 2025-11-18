@@ -1,0 +1,54 @@
+/* Tela inicial */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #fff0f3 0%, #fffaf6 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-screen {
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-content h1 {
+    color: #6b0256;
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.welcome-content p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Botão flutuante */#chatFloatBtn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 60px;       /* tamanho do botão */
+    height: 60px;
+    border-radius: 50%; /* deixa circular */
+    overflow: hidden;   /* garante que a imagem não vaze */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    z-index: 1000;
+}
+
+#chatFloatBtn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cobre todo o círculo sem distorcer */
+    display: block;
+}
+
+#chatFloatBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
